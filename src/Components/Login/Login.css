@@ -1,0 +1,8 @@
+.login-form{
+    height: 350px;
+    width:350px;
+    border: 2px solid lightgrey;
+    margin:auto;
+    background-color:none;
+    margin-top:50px;
+}
