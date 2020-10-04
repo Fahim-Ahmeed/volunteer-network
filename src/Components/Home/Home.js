@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-// import Header from './Header/Header';
+import Header from '../Header/Header';
+
 import './Home.css';
 
 
@@ -17,19 +18,19 @@ const Home = () => {
        
     },[])
     let history = useHistory();
-  const handleVolunteer=()=>{
+  const handleVolunteer=(item)=>{
    
-      history.push('/login')
+      history.push('/volunteerForm',{params:item})
   }
 
     return (
         <div>
-            {/* <Header></Header> */}
+         <Header></Header>
             <div className="container">
                 <div className="row" >
                     {
                         items.map(item=>
-                        <div className="col-3"key={item.name} onClick={handleVolunteer} style={{marginBottom:'30px'}}>
+                        <div className="col-3"key={item.name} onClick={()=>{handleVolunteer(item)}} style={{marginBottom:'30px'}}>
                            <div>
                                <img src={item.image} className="img-fluid" alt=""/>
                                 <h4  >{item.name}</h4>

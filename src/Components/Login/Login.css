@@ -1,8 +1,19 @@
-.login-form{
+login-form{
     height: 350px;
-    width:350px;
+    /* width:350px; */
     border: 2px solid lightgrey;
     margin:auto;
     background-color:none;
-    margin-top:50px;
+    /* margin-top:50px; */
+}
+.google-area{
+    border:1px solid lightgrey;
+    border-radius:5px;
+    width:70%;
+    margin-left: 50px;
+    
+}
+.google-area:hover{
+box-shadow:  5px 10px 18px #888888;
+    cursor: pointer;
 }

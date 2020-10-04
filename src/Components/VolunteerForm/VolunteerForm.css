@@ -1,0 +1,14 @@
+.col-4{
+    
+    border:2px solid lightgrey;
+    margin:auto;
+    height: 400px;
+    margin-top:70px;
+}
+.reg-form{
+    border-top-style: none;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+   
+}
