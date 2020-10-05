@@ -26,11 +26,11 @@ const VolunteerForm = () => {
             .then(result => {
                 if (result) {
 
-                    console.log(result)
+                    history.push('/review')
 
                 }
             })
-        history.push('/review')
+       
     }
 
     return (

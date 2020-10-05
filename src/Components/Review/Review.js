@@ -59,7 +59,7 @@ const Review = () => {
                                                 marginRight: '0px'
                                             }
                                         }
-                                            onClick={() => deleteItem(item._id)}
+                                            
                                         >cancel</button>
                                     </div>
                                 </div>
