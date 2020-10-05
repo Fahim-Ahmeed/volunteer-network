@@ -25,7 +25,7 @@ function App() {
   const [adminlogin,setAdminLogin]=useState({})
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser],[adminlogin,setAdminLogin]}>
-    {/* <div className="App"> */}
+    {/* <div classNameName="App"> */}
     <Router>
       <Switch>
     <Route path="/home"> 

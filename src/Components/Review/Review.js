@@ -39,28 +39,28 @@ const Review = () => {
     return (
         <div>
             <Header></Header>
-            <div className="container">
-                <div className="row">
+            <div classNameName="container">
+                <div classNameName="row">
                     {
                         totalItem.map(item =>
-                            <div className="col-6 shadow p-3 mb-5 bg-white rounded">
-                                <div className="row">
-                                    <div className="col-5">
-                                        <img src={item.image} className="img-fluid" alt="" />
+                            <div classNameName="col-6 shadow p-3 mb-5 bg-white rounded">
+                                <div classNameName="row">
+                                    <div classNameName="col-5">
+                                        <img src={item.image} classNameName="img-fluid" alt="" />
                                     </div>
-                                    <div className="col-7">
+                                    <div classNameName="col-7">
                                         <h3>{item.workName}
                                             <br />
                                             {item.date}
                                         </h3>
-                                        <button className="btn btn-danger " style={
+                                        <button classNameName="btn btn-danger " style={
                                             {
                                                 marginBottom: '0px',
                                                 marginRight: '0px'
                                             }
                                         }
-                                            
-                                        >cancel</button>
+                                        onClick={()=>deleteItem(item._id)}
+                                            >cancel</button>
                                     </div>
                                 </div>
                             </div>)

@@ -32,30 +32,30 @@ const Register = () => {
     console.log(allMembers)
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light ">
+            <nav classNameName="navbar navbar-expand-lg navbar-light ">
                 <NavLink to="/home">
-                    <img className="nav-logo" src={volunteerLogo} alt="" />
+                    <img classNameName="nav-logo" src={volunteerLogo} alt="" />
                 </NavLink>
-                <div className="collapse navbar-collapse" >
+                <div classNameName="collapse navbar-collapse" >
 
                     <ul>
                         <h5> Volunteer register list</h5>
                     </ul>
                 </div>
             </nav>
-            <div className="container">
-                <div className="row">
-                    <div className="col-2">
-                        <NavLink activeClassName="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
+            <div classNameName="container">
+                <div classNameName="row">
+                    <div classNameName="col-2">
+                        <NavLink activeclassNameName="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
                         <br />
-                        <NavLink activeClassName="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
+                        <NavLink activeclassNameName="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
                     </div>
-                    <div className="col-2">
+                    <div classNameName="col-2">
 
                     </div>
-                    <div className="col-8">
-                        <table class="table">
-                            <thead class="thead-dark">
+                    <div classNameName="col-8">
+                        <table className="table">
+                            <thead className="thead-dark">
                                 <tr>
                                     <th scope="col">Name</th>
                                     <th scope="col">Email id</th>
@@ -71,7 +71,7 @@ const Register = () => {
                                         <td>{member.email}</td>
                                         <td>{member.date}</td>
                                         <td>{member.workName}</td>
-                                        <td><button class="btn btn-danger" onClick={() => deleteItem(member._id)}>delete</button></td>
+                                        <td><button className="btn btn-danger" onClick={() => deleteItem(member._id)}>delete</button></td>
                                        </tr>
                                       )}
                             </tbody>

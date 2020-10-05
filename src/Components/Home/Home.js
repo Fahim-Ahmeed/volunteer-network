@@ -28,18 +28,18 @@ console.log(items)
          <Header></Header>
          <h2 style={{textAlign: 'center'}}>I GROW BY HELPING PEOPLE IN NEED</h2>
       <div  style={{marginLeft:'40%',MarginRight:'45%',marginBottom:'5%'}}>
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <form classNameName="form-inline my-2 my-lg-0">
+      <input classNameName="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+      <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
     </div>
-            <div className="container" >
-                <div className="row">
+            <div classNameName="container" >
+                <div classNameName="row">
                     {
                         items.map(item=>
-                        <div className="col-3"key={item.name} onClick={()=>{handleVolunteer(item)}} style={{marginBottom:'30px'}}>
+                        <div classNameName="col-3"key={item.name} onClick={()=>{handleVolunteer(item)}} style={{marginBottom:'30px'}}>
                            <div>
-                               <img src={item.image} className="img-fluid" alt=""/>
+                               <img src={item.image} classNameName="img-fluid" alt=""/>
                                 <h4  >{item.name}</h4>
                                </div> 
                            

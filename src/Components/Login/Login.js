@@ -46,23 +46,23 @@ const Login = () => {
 
 
 
-            <div className="container">
-                <div className="row">
-                    <div className="col-2 " style={{margin:'auto',paddingBottom:'10px',marginBottom:'0px'}}>
+            <div classNameName="container">
+                <div classNameName="row">
+                    <div classNameName="col-2 " style={{margin:'auto',paddingBottom:'10px',marginBottom:'0px'}}>
                         <Link to="/home">
-                            <img src={volunteerLogo} className="img-fluid" alt=""/>
+                            <img src={volunteerLogo} classNameName="img-fluid" alt=""/>
                         </Link>
                     </div>
                 </div>
-                <div className="row">
-                    <div className="col-4">
+                <div classNameName="row">
+                    <div classNameName="col-4">
 
-                        <div className="login-form">
+                        <div classNameName="login-form">
                             <div style={{ margin: 'auto', paddingTop: '40%', paddingBottom: '40%' }}>
                                
                                <h3 style={{ textAlign: 'center'}}>Login with</h3>
                               
-                                <div className="google-area" onClick={handleGoogleLogin}>
+                                <div classNameName="google-area" onClick={handleGoogleLogin}>
                                     <img src={googleLogo} style={{ height: '30px', width: '35px' }} alt="" />
                                     <h6 style={{ display: 'inline' }}>  continue with google</h6>
                                 </div>
