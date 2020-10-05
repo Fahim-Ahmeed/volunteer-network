@@ -10,6 +10,8 @@ import firebaseConfig from '../Header/firebase.Config';
 
 const Header = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext)
+  // const [adminlogin,setAdminLogin]=useContext(UserContext)
+  const provider = new firebase.auth.GoogleAuthProvider();
   let history = useHistory()
   const location = useLocation()
   const path = location.pathname;
@@ -18,14 +20,29 @@ const Header = () => {
     history.push('/login')
   }
   const handleToAdmin=()=>{
+    firebase.auth().signInWithPopup(provider)
+        .then(result=> {
+            var token = result.credential.accessToken;
+            var user = result.user;
+            const signInUSer={...loggedInUser}
+            signInUSer.email=user.email;
+            signInUSer.name=user.displayName;
+            setLoggedInUser(signInUSer);
+            history.push('/register')
+          })
+          .catch(error=> {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            var email = error.email;
+            var credential = error.credential;
+            console.log(errorMessage)
+           
+          });
 
   }
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
         <NavLink to="/home">
           <img className="nav-logo" src={volunteerLogo} alt="" />
         </NavLink>

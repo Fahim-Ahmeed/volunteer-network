@@ -18,7 +18,7 @@ const VolunteerForm = () => {
         const image = myItem.image;
         const totalSubmit = { name: fullName, email: email, date: date, description: description, workName: workName, image: image }
         console.log(totalSubmit)
-        fetch("http://localhost:4000/addMember", {
+        fetch("https://volunteer-service-server.herokuapp.com/addMember", {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(totalSubmit)
@@ -34,11 +34,16 @@ const VolunteerForm = () => {
     }
 
     return (
-        <div>
-            <Link to="/home">
-                <img src={volunteerLogo} style={{ height: '60px', width: '150px' }} alt="" />
-            </Link>
+        <>
             <div className="container">
+                
+            <div className="row">
+                    <div className="col-2 " style={{margin:'auto',paddingBottom:'10px',marginBottom:'0px'}}>
+                        <Link to="/home">
+                            <img src={volunteerLogo} className="img-fluid" alt=""/>
+                        </Link>
+                    </div>
+                </div>
                 <div className="row">
                     <div className="col-4">
                         <h3 style={{ marginTop: '20px' }}>Register as a volunteer</h3>
@@ -55,7 +60,7 @@ const VolunteerForm = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

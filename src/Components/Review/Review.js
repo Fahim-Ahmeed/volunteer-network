@@ -9,7 +9,7 @@ const Review = () => {
 
     const [totalItem, setTotalItem] = useState([])
     const reviewWork=()=>{
-        fetch(`http://localhost:4000/reviewWork?email=${loggedInUser.email}`, {
+        fetch(`https://volunteer-service-server.herokuapp.com/reviewWork?email=${loggedInUser.email}`, {
             method: 'GET',
             //   headers: {
             //       'authorization':(`bearer ${sessionStorage.getItem('jwt')}`),
@@ -27,7 +27,7 @@ const Review = () => {
         reviewWork();
     }, [])
     const deleteItem = (id) => {
-        fetch(`http://localhost:4000/deleteWork/${id}`, {
+        fetch(`https://volunteer-service-server.herokuapp.com/deleteWork/${id}`, {
             method: 'DELETE',
         })
             .then(result => {
