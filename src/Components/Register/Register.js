@@ -24,7 +24,7 @@ const Register = () => {
         })
             .then(result => {
                 if (result) {
-                  loadAllMember()
+                    loadAllMember()
                 }
             })
     }
@@ -32,28 +32,28 @@ const Register = () => {
     console.log(allMembers)
     return (
         <div>
-            <nav classNameName="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar navbar-expand-lg navbar-light ">
                 <NavLink to="/home">
-                    <img classNameName="nav-logo" src={volunteerLogo} alt="" />
+                    <img className="nav-logo" src={volunteerLogo} alt="" />
                 </NavLink>
-                <div classNameName="collapse navbar-collapse" >
+                <div className="collapse navbar-collapse" >
 
                     <ul>
                         <h5> Volunteer register list</h5>
                     </ul>
                 </div>
             </nav>
-            <div classNameName="container">
-                <div classNameName="row">
-                    <div classNameName="col-2">
-                        <NavLink activeclassNameName="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
+            <div className="container">
+                <div className="row">
+                    <div className="col-2">
+                        <NavLink activeclass="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
                         <br />
-                        <NavLink activeclassNameName="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
+                        <NavLink activeclass="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
                     </div>
-                    <div classNameName="col-2">
+                    <div className="col-2">
 
                     </div>
-                    <div classNameName="col-8">
+                    <div className="col-8">
                         <table className="table">
                             <thead className="thead-dark">
                                 <tr>
@@ -66,22 +66,22 @@ const Register = () => {
                             </thead>
                             <tbody>
                                 {
-                                      allMembers.map(member => <tr>
+                                    allMembers.map(member => <tr>
                                         <td>{member.name}</td>
                                         <td>{member.email}</td>
                                         <td>{member.date}</td>
                                         <td>{member.workName}</td>
                                         <td><button className="btn btn-danger" onClick={() => deleteItem(member._id)}>delete</button></td>
-                                       </tr>
-                                      )}
+                                    </tr>
+                                    )}
                             </tbody>
                         </table>
                     </div>
 
-                    </div>
                 </div>
-
             </div>
+
+        </div>
     );
 };
 

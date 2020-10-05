@@ -29,49 +29,49 @@ const AddEvent = () => {
     }
     return (
         <div>
-            <nav classNameName="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar navbar-expand-lg navbar-light ">
                 <NavLink to="/home">
-                    <img classNameName="nav-logo" src={volunteerLogo} alt="" />
+                    <img className="nav-logo" src={volunteerLogo} alt="" />
                 </NavLink>
-                <div classNameName="collapse navbar-collapse" >
+                <div className="collapse navbar-collapse" >
 
                     <ul>
                         <h5>Add Event</h5>
                     </ul>
                 </div>
             </nav>
-            <div classNameName="container">
-                <div classNameName="row">
-                    <div classNameName="col-2">
-                        <NavLink activeclassNameName="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
+            <div className="container">
+                <div className="row">
+                    <div className="col-2">
+                        <NavLink activeclass="selected" to='/register'><img src={RegiserLogo} style={{ width: '17px' }} alt="" /><span>  Volunteer register list</span></NavLink>
                         <br />
-                        <NavLink activeclassNameName="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
+                        <NavLink activeclass="selected" to='/addEvent'><img src={addLogo} style={{ width: '17px' }} alt="" /><span> Add event</span></NavLink>
                     </div>
-                    <div classNameName="col-2">
+                    <div className="col-2">
 
                     </div>
-                    <div classNameName="col-8">
-                        <div classNameName="container">
-                            <div classNameName="row">
+                    <div className="col-8">
+                        <div className="container">
+                            <div className="row">
 
-                                <div classNameName="col-6">
+                                <div className="col-6">
                                     <label>Event title</label>
                                     <input style={{ width: '100%' }} id="title" type="text" />
                                 </div>
-                                <div classNameName="col-6">
+                                <div className="col-6">
                                     <label>Date</label>
                                     <input type="date" id="date" style={{ width: '100%' }} />
                                 </div>
-                                <div classNameName="col-6">
+                                <div className="col-6">
                                     <label>Description</label>
                                     <input type="text" id="description" style={{ width: '100%' }} />
                                 </div>
-                                <div classNameName="col-6">
+                                <div className="col-6">
                                 </div>
                             </div>
                             <br />
-                            <div classNameName="col-6">
-                                <button classNameName="btn btn-success" onClick={handleAddEvent}>Submit</button>
+                            <div className="col-6">
+                                <button className="btn btn-success" onClick={handleAddEvent}>Submit</button>
                             </div>
                         </div>
                     </div>
