@@ -17,7 +17,7 @@ A volunteer admin can organise a new volunteer event,every participant under con
 
 ### Features:
 - Get volunteer service
-- A volunteer can choose the event they need
+- A volunteer can choose the event they interest
 - A volunter can pick any date to complete the event
 - Admin control project
 - An admin can cancel someone from any event if they want
